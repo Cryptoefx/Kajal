@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kajal — Portfolio</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Meta for theme color on mobile -->
+  <meta name="theme-color" content="#0b0f14">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="#">kajal</a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">about</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#work">work</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+
+      <button class="cta" id="downloadBtn">Resume</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero container" id="home" aria-label="hero">
+      <div class="hero-left glass">
+        <h1 class="hero-title">hi, i'm <span class="accent">kajal</span></h1>
+        <p class="hero-sub">Designer • Frontend dev • product thinker</p>
+        <p class="hero-desc">I craft clean, minimal interfaces with thoughtful micro-interactions and delightful details.</p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn primary">see my work</a>
+          <a href="#contact" class="btn ghost">let's talk</a>
+        </div>
+
+        <ul class="stats">
+          <li><strong>8+</strong><span>projects</span></li>
+          <li><strong>5</strong><span>years</span></li>
+          <li><strong>100%</strong><span>love for craft</span></li>
+        </ul>
+      </div>
+
+      <aside class="hero-right">
+        <div class="profile-card glass">
+          <div class="profile-photo" role="img" aria-label="Kajal photo">
+            <!-- Replace background-image in CSS or an <img> here -->
+          </div>
+          <div class="profile-info">
+            <h3>Kajal Sharma</h3>
+            <p>Product Designer & Frontend</p>
+            <div class="socials">
+              <a href="#" aria-label="Twitter">T</a>
+              <a href="#" aria-label="Dribbble">D</a>
+              <a href="#" aria-label="Github">G</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="quick-contact glass">
+          <div><strong>Email</strong><span>hello@kajal.design</span></div>
+          <div><strong>Location</strong><span>Mumbai, IN</span></div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- About -->
+    <section class="about container glass" id="about">
+      <h2>about</h2>
+      <p>I'm Kajal — I design accessible products and build fast frontends. I love microcopy, system design, and subtle motion that communicates meaning. I work at the intersection of design and code.</p>
+      <div class="skills">
+        <span>UI / UX</span>
+        <span>React</span>
+        <span>HTML & CSS</span>
+        <span>Design Systems</span>
+        <span>Prototyping</span>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects container" id="projects">
+      <h2>projects</h2>
+      <div class="grid">
+        <!-- Project cards: duplicate and edit -->
+        <article class="project-card glass">
+          <div class="project-tag">Product</div>
+          <h3>FinFlow — Finance dashboard</h3>
+          <p>A responsive dashboard for tracking habits, budgets and investments with playful, friendly visuals.</p>
+          <div class="project-meta">
+            <span>React</span>
+            <span>Figma</span>
+            <a class="link" href="#">case study →</a>
+          </div>
+        </article>
+
+        <article class="project-card glass">
+          <div class="project-tag">Design</div>
+          <h3>OnePage Portfolio</h3>
+          <p>Streamlined portfolio template with emphasis on copy and motion to drive attention to important details.</p>
+          <div class="project-meta">
+            <span>HTML</span>
+            <span>CSS</span>
+            <a class="link" href="#">live →</a>
+          </div>
+        </article>
+
+        <article class="project-card glass">
+          <div class="project-tag">App</div>
+          <h3>CalmNotes</h3>
+          <p>Minimal notes app that blends writing and mindfulness via gentle animations and safe defaults.</p>
+          <div class="project-meta">
+            <span>TypeScript</span>
+            <span>Design System</span>
+            <a class="link" href="#">case study →</a>
+          </div>
+        </article>
+
+        <article class="project-card glass">
+          <div class="project-tag">UX</div>
+          <h3>Onboard Flow</h3>
+          <p>Redesigned onboarding for a SaaS product — reduced drop-off by 28% during testing.</p>
+          <div class="project-meta">
+            <span>Research</span>
+            <span>Figma</span>
+            <a class="link" href="#">writeup →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Work / Experience -->
+    <section class="work container glass" id="work">
+      <h2>work</h2>
+      <ul class="timeline">
+        <li>
+          <strong>Senior Product Designer</strong>
+          <span>— 2022–Present</span>
+          <p>Designing B2B products with a focus on conversion and accessibility.</p>
+        </li>
+        <li>
+          <strong>Frontend Developer</strong>
+          <span>— 2019–2022</span>
+          <p>Built interactive prototypes and production-features using React.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact container glass" id="contact">
+      <h2>contact</h2>
+      <p>Available for freelance and full-time roles. I reply within 48 hours.</p>
+
+      <form id="contactForm" class="contact-form" aria-label="Contact Kajal">
+        <div class="form-row">
+          <input type="text" name="name" placeholder="your name" required />
+          <input type="email" name="email" placeholder="your email" required />
+        </div>
+        <textarea name="message" rows="5" placeholder="what's up?" required></textarea>
+        <div class="form-actions">
+          <button type="submit" class="btn primary">send message</button>
+          <button type="button" class="btn ghost" id="copyEmail">copy email</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <small>© <span id="year"></span> Kajal — crafted with care</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
